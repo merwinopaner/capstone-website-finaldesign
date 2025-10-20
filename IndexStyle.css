@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham", sans-serif;
+}
+
+/* Header/Navbar */
+.navbar {
+  background-color: #223C3B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 50px;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+
+  object-fit: cover;
+}
+
+.nav-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 30px;
+  transition: opacity 0.2s;
+}
+
+.nav-right a:hover {
+  opacity: 0.8;
+}
+
+/* Main split layout */
+.hero-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Left side (text) */
+.hero-content {
+  width: 50%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 73px;
+  color: #223C3B;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* Start button */
+.start-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D1F986;
+  color: #16332d;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 160px;
+}
+
+.start-btn:hover {
+  background-color: #baf25c;
+  transform: scale(1.05);
+}
+
+/* Icon inside button */
+.start-btn .icon {
+  background-color: #16332d;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-btn .arrow {
+  color: #D1F986;
+  font-size: 1.2rem;
+  transform: translateX(1px); /* slight visual adjustment if needed */
+  
+}
+
+/* Right side image (auto slideshow) */
+.hero-image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+/* Footer */
+.footer {
+  background-color: #223C3B;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 43px 50px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-right a {
+    margin-left: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-section {
+  flex: 1; /* pushes the footer down */
+}
+
+	

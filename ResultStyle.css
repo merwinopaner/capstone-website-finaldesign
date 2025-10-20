@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham", sans-serif;
+}
+
+/* Header/Navbar */
+.navbar {
+  background-color: #223C3B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding: 26px 50px;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+
+  object-fit: cover;
+}
+
+.nav-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 30px;
+  transition: opacity 0.2s;
+}
+
+.nav-right a:hover {
+  opacity: 0.8;
+}
+
+
+.results-section {
+  width: 100%;
+  max-width: 1500px;
+  margin: 60px auto;
+  font-family: "Gotham", sans-serif;
+  color: #1e3d3b;
+  position: relative;
+}
+
+.results-section h2 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.result-bar {
+  background-color: #e0e0e0;
+  border-radius: 85.5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 70px;
+  position: relative;
+}
+
+.bar {
+  width: var(--percent);
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #fff;
+  transition: width 0.5s ease-in-out;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden;    /* Hides overflow if needed */
+  text-overflow: ellipsis; /* Adds "..." if text gets too long */
+}
+
+.bar .career-name {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.bar .percentage {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.dark-text {
+  color: #1e3d3b;
+}
+
+.result-description {
+  margin-top: 40px;
+}
+
+.result-description h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.result-description {
+  margin-top: 40px;
+}
+
+.result-description h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #131313;
+}
+
+.description-box {
+  width: 100%;
+  max-width: 1500px;
+  height: 700px;
+  background-color: #d9d9d9; /* fallback color */
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: 100px
+}
+
+.description-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+
+}
+
+.restart-btn {
+  background-color: #D7FF81;
+  color: #1e3d3b;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 36px;
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  transition: 0.3s;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.restart-btn:hover {
+  background-color: #c9f572;
+}
+
+.arrow {
+  font-size: 46px;
+}
+
+
+/* Footer stays at the bottom */
+.footer {
+  background-color: #223C3B;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 43px 50px;
+  font-size: 21px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: auto; /* pushes it down */
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-right a {
+    margin-left: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+.hero-section {
+  flex: 1; /* pushes the footer down */
+}
+
+	
