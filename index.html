@@ -9,26 +9,22 @@
 </head>
 <body>
 
-
-
   <!-- Header -->
   <header class="navbar">
     <div class="nav-left">
-      <!-- Replace with your logo file -->
       <a href="index.html">
         <img src="logo1.png" alt="Logo" class="logo">
       </a>
     </div>
     <nav class="nav-right">
-	  <a href="index.html">Test</a>
+      <a href="index.html">Test</a>
       <a href="AboutUs.html">About</a>
-	  <a href="careers.html">Careers</a>
+      <a href="Careers.html">Careers</a>
     </nav>
   </header>
 
   <!-- Main Section -->
   <section class="hero-section">
-    <!-- Left Content -->
     <div class="hero-content">
       <h1>Career Guidance System<br>for Multimedia Careers</h1>
       <p>
@@ -46,22 +42,20 @@
       </button>
     </div>
 
-    <!-- Right Image Section -->
     <div class="hero-image">
       <img id="slideshow" src="Slideshow1.jpg" alt="Creative workspace">
     </div>
   </section>
 
   <script>
-    // --- Image Slideshow Function ---
-    const images = ["Slideshow1.jpg", "Slideshow2.jpg", "Slideshow3.jpg", "Slideshow4.jpg"]; // add your image filenames here
+    const images = ["Slideshow1.jpg", "Slideshow2.jpg", "Slideshow3.jpg", "Slideshow4.jpg"];
     let index = 0;
     const slide = document.getElementById("slideshow");
 
     setInterval(() => {
       index = (index + 1) % images.length;
       slide.src = images[index];
-    }, 5000); // changes every 5 seconds
+    }, 5000);
   </script>
 
   <!-- Footer -->
@@ -72,5 +66,3 @@
 
 </body>
 </html>
-
-
